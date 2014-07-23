@@ -1,0 +1,10 @@
+---
+layout: page
+title: Kenshen's Blog
+tagline: 追踪未来的脚步
+---
+{% include JB/setup %}
+
+
+
+
