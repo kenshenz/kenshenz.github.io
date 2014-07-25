@@ -9,7 +9,7 @@ pygments: true
 # so be sure to set them if your theme uses them.
 #
 title : Kenshen's Blog
-tagline: Site Tagline
+tagline: 追踪未来的脚步
 author :
   name : Kenshen Chan
   email : kenshenchan@gmail.com
@@ -26,6 +26,9 @@ author :
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
 production_url : http://kenshenz.github.io
+
+# 每页显示的文章数
+paginate: 20
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
