@@ -8,7 +8,7 @@ tags : [intro, beginner, jekyll, tutorial]
 
 #PhoneGap/Cordova开发环境配置
 
-这里以Cordova3.5的安装为例，由于Cordova3.X不再直接提供编译好的包，所以只能从源码编译
+这里以Cordova3.5的安装为例，Cordova3.X不再直接提供编译好的包，改为以Node.js模块发布。
 
 1. 安装[Node.js](http://www.nodejs.org/)，这个没什么好说，直接执行安装即可。
 2. 使用Node.js的npm命令（Node.js的模块下载工具）来下载Cordova,通过npm安装的模块会保存到C:\Users\<i>username</i>\AppData\Roaming\npm
@@ -47,7 +47,8 @@ tags : [intro, beginner, jekyll, tutorial]
             version: '3.5.0'
         },
         
-    www是必须修改的，其他平台看情况，用到哪个平台就修改哪个。
+    www代表cordova项目，一定要改，其他平台看情况，用到哪个平台就修改哪个。  
+    （在github上能找到替代路径）
 5. 创建Cordova项目  
 使用cordova命令创建cordova项目
 
@@ -59,7 +60,7 @@ tags : [intro, beginner, jekyll, tutorial]
         |-hooks
           |-README.md
         |-merges
-        |-platforms                 #各个平台项目的存放路径
+        |-platforms                 #各个平台项目的存放路径，也是cordova的编译目标路径（不是源路径喔！）
         |-plugins                   #项目使用到的插件存放路径
         |-www                       #项目源代码存放路径
           |-css
@@ -69,14 +70,14 @@ tags : [intro, beginner, jekyll, tutorial]
           |-js
             |-index.js
           |-index.html
-        |-config.xml                #项目的配置文件，包含主页面路径、使用到的特性等内容
+        |-config.xml                #项目的配置文件，包含主页面路径、使用到的特性（插件）等内容
         
    重点关注有解释的目录
     
 6. 添加平台  
 Cordova的最大特点就是跨平台，所以我们可以很轻松的在cordova项目中创建我们需要的平台，但是前提是安装了必须的平台环境。  
 以Android环境为例，我们需要安装JDK、Android SDK、Ant（安装配置过程就略过了）。  
-一切就绪之后，使用cordova命令添加android平台
+一切就绪之后，进入cordova目录，使用cordova命令添加android平台。
 
         $>cordova platform add android
     
@@ -89,8 +90,8 @@ Cordova的最大特点就是跨平台，所以我们可以很轻松的在cordova项目中创建我们需要的平
 到了这里，我们需要确定一下项目今后是采取跨平台模式还是混合模式来开发。  
 它们的区别在于：  
 
-    - 跨平台模式只在www目录下写代码，其他跟平台有关的都通过插件（后面会说）来实现。每次代码修改后需要使用命令编译。
-    - 混合模式是针对某一个平台项目进行开发，例如android平台，那就直接在Eclipse中导入cordova项目（实际上是platforms下的android项目）。功能可以直接通过java代码来实现。
+    - 跨平台模式只在cordova项目的www目录下写代码，其他跟平台有关的都通过插件来实现，每次代码修改后需要使用命令编译。
+    - 混合模式是针对某一个平台进行开发，例如android平台，可以直接在Eclipse中导入cordova项目（实际上是platforms下的android项目）。功能可以直接通过java代码来实现。
     - 跨平台模式一套代码，直接能打包成各个平台的应用（如果用到插件需要提供各平台的实现版本）。
     
 至此，Cordova的开发环境已配置完成了。后面就是coding and coding。
