@@ -1,16 +1,16 @@
 ---
 layout: post
+date : 2014-08-29 17:06
+title : PhoneGap/Cordova开发环境配置
 category : lessons
 tags : [phonegap, cordova, mobile, html5]
 ---
 {% include JB/setup %}
 
-#PhoneGap/Cordova开发环境配置
-
 这里以Windows平台下Cordova3.5的安装为例，Cordova3.X不再直接提供编译好的包，改为以Node.js模块发布。
 
 1. 安装[Node.js](http://www.nodejs.org/)，这个没什么好说，直接执行安装即可。
-2. 使用Node.js的npm命令（Node.js的模块下载工具）来下载Cordova,通过npm安装的模块会保存到C:\Users\<i>username</i>\AppData\Roaming\npm
+2. 使用Node.js的npm命令（Node.js的模块下载工具）来下载Cordova,通过npm安装的模块会保存到C:\Users\username\AppData\Roaming\npm
 <!--break-->
 
         $>npm install -g cordova
@@ -32,7 +32,7 @@ tags : [phonegap, cordova, mobile, html5]
         $>git config --global https.proxy http://192.168.99.100:80
 
 4. *修改Cordova项目模板的下载地址（该步骤不是必须的，但由于cordova默认是从美国的git仓库下载cordova项目模板，所以常常会因为超时导致下载失败）  
-修改C:\Users\<i>username</i>\AppData\Roaming\npm\node_modules\cordova\node_modules\cordova-lib\src\cordova目录下的platforms.js文件，具体如下：
+修改C:\Users\username\AppData\Roaming\npm\node_modules\cordova\node_modules\cordova-lib\src\cordova目录下的platforms.js文件，具体如下：
 
         'android' : {
             parser : './metadata/android_parser',
