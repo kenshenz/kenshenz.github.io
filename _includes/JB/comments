@@ -11,6 +11,8 @@
   {% include JB/comments-providers/facebook %}
 {% when "custom" %}
   {% include custom/comments %}
+{% when "sohucs" %}
+  {% include custom/comment-providers/sohucs %}
 {% endcase %}
 
 {% endif %}
