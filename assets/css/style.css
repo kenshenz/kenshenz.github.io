@@ -1,0 +1,18 @@
+.return-top {
+    display: none;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    text-align: center;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    background-image: url(../images/icons/return_top.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-position: 0px -50px;
+    background-size: auto auto;
+    
+}

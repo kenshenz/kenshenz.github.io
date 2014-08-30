@@ -13,11 +13,11 @@ postid : 1409396959529
 ##安装Node.js 
 
 Node.js是一个Javascript运行环境，我们暂时不需要去了解它，只要知道Cordova是一个Node.js模块，运行Cordova需要Node.js运行环境就行了。  
-安装[Node.js](http://www.nodejs.org/)，这个没什么好说，直接下载安装包并执行安装即可。
+安装[Node.js](http://www.nodejs.org/)，这个没什么好说，直接下载安装包并执行安装即可。<!--break-->
 
 ##安装Cordova
 
-使用Node.js的npm命令（Node.js的模块下载工具）来下载Cordova,通过npm安装的模块会保存到C:\Users\\*username*\AppData\Roaming\npm<!--break-->
+使用Node.js的npm命令（Node.js的模块下载工具）来下载Cordova,通过npm安装的模块会保存到C:\Users\\*username*\AppData\Roaming\npm
 
     $>npm install -g cordova
 

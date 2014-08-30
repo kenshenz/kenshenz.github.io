@@ -20,6 +20,7 @@
     
     <!-- Custom styles -->
     <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+    <link href="{{ BASE_PATH }}/assets/css/style.css" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -43,6 +44,7 @@
   </head>
 
   <body>
+    <div class="return-top"></div>
     <div id="wrap">
       <nav class="navbar navbar-default" role="navigation">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -92,7 +94,28 @@
 
     <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+<script src="http://lib.sinaapp.com/js/jquery/1.10.2/jquery-1.10.2.min.js"></script>
     <script src="{{ ASSET_PATH }}/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+    $(document).ready(function() {
+
+        $(".return-top").on("click", function(e) {
+            $("html,body").animate({scrollTop: $("body").offset().top}, "fast"); 
+        });
+
+        $(document).scroll(function() {
+            var scrollTop = $(document).scrollTop();
+            if(scrollTop > 0) {
+                $(".return-top").css("display", "block");
+            }else {
+                $(".return-top").css("display", "none");
+            }
+        });
+        
+        
+
+    });
+    </script>
   </body>
 </html>

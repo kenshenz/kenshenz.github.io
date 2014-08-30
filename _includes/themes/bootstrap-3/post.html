@@ -11,6 +11,7 @@
       {{ content }}
     </div>
 
+  {%comment%}
   {% unless page.categories == empty %}
     <ul class="tag_box inline">
       <li><i class="glyphicon-open"></i></li>
@@ -26,6 +27,7 @@
       {% include JB/tags_list %}
     </ul>
   {% endunless %}  
+  {%endcomment%}
   
     <hr>
     <ul class="pagination">
