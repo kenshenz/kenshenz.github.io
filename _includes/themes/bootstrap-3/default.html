@@ -104,7 +104,7 @@
             $("html,body").animate({scrollTop: $("body").offset().top}, "fast"); 
         });
 
-        $(document).scroll(function() {
+        $(window).scroll(function() {
             var scrollTop = $(document).scrollTop();
             if(scrollTop > 0) {
                 $(".return-top").css("display", "block");
