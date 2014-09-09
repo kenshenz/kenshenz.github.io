@@ -1,7 +1,7 @@
 ---
 layout: post
 date : 2014-08-29 17:06
-title : [PhoneGap/Cordova]开发环境配置
+title : PhoneGap/Cordova开发环境配置
 category : lessons
 tags : [phonegap, cordova, mobile, html5]
 postid : 1409396959529
