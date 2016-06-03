@@ -4,7 +4,7 @@ date : 2016-06-03 15:15
 title : ［翻译］Disruptor介绍
 category : lessons
 tags : [disruptor, 并发框架]
-postid : 1464939255275
+postid : 1410414980594
 ---
 {% include JB/setup %}
 
