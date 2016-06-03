@@ -30,7 +30,7 @@ postid : 1464939255275
 * EventHandler：一个接口，由用户实现来作为消费者
 * Producer：由用户编写，把事件入队
 
-
+<img src="{{ site.url }}/assets/images/506285.png" width="960"/>
 
 ###事件广播
 
