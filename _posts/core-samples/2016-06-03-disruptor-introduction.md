@@ -1,7 +1,7 @@
 ---
 layout: post
 date : 2016-06-03 15:15
-title : ［翻译］Disruptor介绍
+title : ［译］Disruptor介绍
 category : lessons
 tags : [disruptor, 并发框架]
 postid : 1464939255275
