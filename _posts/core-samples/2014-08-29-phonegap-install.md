@@ -10,12 +10,12 @@ postid : 1409396959529
 
 这里以Windows平台下Cordova3.5的安装为例，Cordova3.X不再直接提供编译好的包，改为以Node.js模块发布。
 
-##安装Node.js 
+## 安装Node.js 
 
 Node.js是一个Javascript运行环境，我们暂时不需要去了解它，只要知道Cordova是一个Node.js模块，运行Cordova需要Node.js运行环境就行了。  
 安装[Node.js](http://www.nodejs.org/)，这个没什么好说，直接下载安装包并执行安装即可。<!--break-->
 
-##安装Cordova
+## 安装Cordova
 
 使用Node.js的npm命令（Node.js的模块下载工具）来下载Cordova,通过npm安装的模块会保存到C:\Users\\*username*\AppData\Roaming\npm
 
@@ -29,7 +29,7 @@ Node.js是一个Javascript运行环境，我们暂时不需要去了解它，只
     $>npm config set https-proxy http://192.168.99.100:80
     $>npm config set proxy http://192.168.99.100:80
         
-##安装Git
+## 安装Git
 
 之所以安装[Git](http://www.git-scm.com/)，是因为创建Cordova项目时需要使用到的模板都是从git仓库上拉下来的。Windows下Git的安装也很简单，直接执行安装即可（安装过程中记得勾选把Git添加到Path路径下，这样方便后面直接在命令行中使用）。  
 同样，如果公司不能直接连外网，则需要设置一下git的代理。
@@ -60,7 +60,7 @@ Node.js是一个Javascript运行环境，我们暂时不需要去了解它，只
 www代表cordova项目，一定要改，其他平台看情况，用到哪个平台就修改哪个。  
 （在github上能找到替代路径）
 
-##创建Cordova项目
+## 创建Cordova项目
 
 使用cordova命令创建cordova项目
 
@@ -86,7 +86,7 @@ www代表cordova项目，一定要改，其他平台看情况，用到哪个平�
         
 重点关注有解释的目录
     
-##添加平台
+## 添加平台
 
 Cordova的最大特点就是跨平台，所以我们可以很轻松的在cordova项目中创建我们需要的平台，但是前提是安装了必须的平台环境。  
 以Android环境为例，我们需要安装JDK、Android SDK、Ant（安装配置过程就略过了）。  
@@ -100,7 +100,7 @@ Cordova的最大特点就是跨平台，所以我们可以很轻松的在cordova
     
     $>cordova run android
 
-##跨平台模板和混合模式  
+## 跨平台模板和混合模式  
 
 到了这里，我们需要确定一下项目今后是采取跨平台模式还是混合模式来开发。  
 它们的区别在于：  
